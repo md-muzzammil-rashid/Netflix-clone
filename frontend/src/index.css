@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.home-header button{
+  background-color: red;
+}
+
+.home-header{
+  /* padding: 0 10%; */
+}
+
+.home-hero::before{
+  content: ' ayaan';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+.home-hero ::after{
+  content: ' ';
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.536) ; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+body{
+  background-color: black;
+}
+.signinbg::before{
+  position: absolute;
+  opacity: 50%;
+  content: ' ';
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.signinbg>div{
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
